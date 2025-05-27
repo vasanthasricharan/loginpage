@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container" onclick="toggleOverlay()">
+        <div class="overlay" id="overlay"></div>
+        <div class="box left">
+            <h1> Sign up </h1>
+            <div class="left-content">
+                <input type="text" id="signupUsername" placeholder="Username">
+                <input type="email" id="signupEmail" placeholder="Email">
+                <input type="password" id="signupPassword" placeholder="password">
+                <input type="password" id="signupConfirmPassword" placeholder="Confirm password">
+                <button type="button" onclick="handleSignup(event)">Signup</button>
+            </div>
+        </div>
+        <div class="box right">
+            <h1>Login</h1>
+            <div class="right-content">
+                <input type="text" id="loginEmail" placeholder="Email address or phone number">
+                <input type="password" id="loginPassword" placeholder="Password">
+                <button type="button" onclick="handleLogin()">Log in</button>
+                <div class="Forgotten">Forgotten Password?</div>
+                <div class="vertical-line"></div>
+                <div class="create-account">
+                    <button type="button" onclick="moveRight(event)">Create new account</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
